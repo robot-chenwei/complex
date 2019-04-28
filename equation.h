@@ -20,7 +20,7 @@ public:
     equation(complex a, complex b, complex c) : A(a), B(b), C(c), order(2), Esp(EQUANTION_DEFAULT_ESP)  {}
     equation(complex a, complex b, complex c, complex d)  : A(a), B(b), C(c), D(d), order(3), Esp(EQUANTION_DEFAULT_ESP)  {}
     equation(complex a, complex b, complex c, complex d, complex e) : A(a), B(b), C(c), D(d), E(e), order(4), Esp(EQUANTION_DEFAULT_ESP)  {}
-    int solve(complex ans[]);
+    int roots(complex ans[]);
 };
 
 #endif
