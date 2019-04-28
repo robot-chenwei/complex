@@ -10,28 +10,28 @@ int main() {
 
     complex ans[4];
     equation e1(1.0, 1.0);
-    int size = e1.solve(ans);
+    int size = e1.roots(ans);
     std::cout << "ans size : " << size << std::endl;
     for (int i = 0; i < size; ++ i)
         std::cout << ans[i] << ", ";
     std::cout << std::endl;
 
     equation e2(1.0, 0.0, 1.0);
-    size = e2.solve(ans);
+    size = e2.roots(ans);
     std::cout << "ans size : " << size << std::endl;
     for (int i = 0; i < size; ++ i)
         std::cout << ans[i] << ", ";
     std::cout << std::endl;
 
     equation e3(1.0, 0.0, 0.0, 1.0);
-    size = e3.solve(ans);
+    size = e3.roots(ans);
     std::cout << "ans size : " << size << std::endl;
     for (int i = 0; i < size; ++ i)
         std::cout << ans[i] << ", ";
     std::cout << std::endl;
 
     equation e4(1.0, .0, .0, .0, -1.0);
-    size = e4.solve(ans);
+    size = e4.roots(ans);
     std::cout << "ans size : " << size << std::endl;
     for (int i = 0; i < size; ++ i)
         std::cout << ans[i] << ", ";
