@@ -4,7 +4,7 @@
 
 #include "equation.h"
 
-int equation::solve(complex ans[]) {
+int equation::roots(complex ans[]) {
     if (A.norm() <Esp) {
         return 0;
     } else if (1 == order) { // y = ax+b
